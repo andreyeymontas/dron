@@ -69,7 +69,7 @@ namespace internet {
     // Метод для проверки наличия товара на складе
     bool MyForm2::IsProductAvailable(String^ productName, int quantity)
     {
-        
+       
 
         int quantityInStock = GetProductQuantityInStock(productName);
 
@@ -79,8 +79,9 @@ namespace internet {
     // Получения количества товара на складе 
     int MyForm2::GetProductQuantityInStock(String^ productName)
     {
+        
 
-        String^ connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\Денис\\Desktop\\internet\\internet\\x64\\Debug\\Test.mdb";
+        String^ connectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\\Users\\lucky\\Desktop\\internet (1)\\internet\\x64\\Debug\\Test.mdb";
         OleDbConnection^ connection = gcnew OleDbConnection(connectionString);
 
         // Предположим, что у вас есть колонка "Количество" в таблице "Person".

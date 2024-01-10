@@ -292,8 +292,15 @@ private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e
 	// Получение выбранной строки
 	int selectedRowIndex = dataGridView1->CurrentCell->RowIndex;
 
-	// Удаление записи
-	RemoveRecord(selectedRowIndex);
+	// Подтверждение удаления
+	System::Windows::Forms::DialogResult result = MessageBox::Show("Вы уверены, что хотите удалить запись?", "Подтверждение удаления", MessageBoxButtons::YesNo, MessageBoxIcon::Question);
+
+	// Проверка результата подтверждения
+	if (result == System::Windows::Forms::DialogResult::Yes) {
+		// Удаление записи
+		RemoveRecord(selectedRowIndex);
+	}
+	// Иначе, если пользователь выбрал "Нет" или "Отмена", ничего не делаем
 }
 
 private: System::Void dataGridView1_SelectionChanged(System::Object^ sender, System::EventArgs^ e) {

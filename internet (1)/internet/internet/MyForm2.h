@@ -58,6 +58,7 @@ namespace internet {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Button^ button5;
 
 	private:
 		/// <summary>
@@ -86,6 +87,7 @@ namespace internet {
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->BeginInit();
 			this->SuspendLayout();
 			// 
@@ -93,11 +95,10 @@ namespace internet {
 			// 
 			this->dataGridView1->BackgroundColor = System::Drawing::Color::Aqua;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(16, 15);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dataGridView1->Location = System::Drawing::Point(12, 12);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
-			this->dataGridView1->Size = System::Drawing::Size(640, 266);
+			this->dataGridView1->Size = System::Drawing::Size(480, 216);
 			this->dataGridView1->TabIndex = 0;
 			// 
 			// button1
@@ -106,10 +107,9 @@ namespace internet {
 			this->button1->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button1->Location = System::Drawing::Point(16, 334);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Location = System::Drawing::Point(12, 271);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(208, 49);
+			this->button1->Size = System::Drawing::Size(156, 40);
 			this->button1->TabIndex = 1;
 			this->button1->Text = L"Обновить ";
 			this->button1->UseVisualStyleBackColor = false;
@@ -121,10 +121,9 @@ namespace internet {
 			this->button2->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button2->Location = System::Drawing::Point(482, 334);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Location = System::Drawing::Point(362, 271);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(208, 49);
+			this->button2->Size = System::Drawing::Size(156, 40);
 			this->button2->TabIndex = 2;
 			this->button2->Text = L"Добавить";
 			this->button2->UseVisualStyleBackColor = false;
@@ -136,10 +135,9 @@ namespace internet {
 			this->button3->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button3->Location = System::Drawing::Point(249, 334);
-			this->button3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button3->Location = System::Drawing::Point(187, 271);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(208, 49);
+			this->button3->Size = System::Drawing::Size(156, 40);
 			this->button3->TabIndex = 3;
 			this->button3->Text = L"Сохранить ";
 			this->button3->UseVisualStyleBackColor = false;
@@ -150,10 +148,9 @@ namespace internet {
 			this->button4->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->button4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button4->Location = System::Drawing::Point(725, 334);
-			this->button4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button4->Location = System::Drawing::Point(544, 271);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(208, 49);
+			this->button4->Size = System::Drawing::Size(156, 40);
 			this->button4->TabIndex = 4;
 			this->button4->Text = L"Удалить";
 			this->button4->UseVisualStyleBackColor = false;
@@ -161,34 +158,30 @@ namespace internet {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(725, 40);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->Location = System::Drawing::Point(544, 32);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(271, 22);
+			this->textBox1->Size = System::Drawing::Size(204, 20);
 			this->textBox1->TabIndex = 5;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(725, 108);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox2->Location = System::Drawing::Point(544, 88);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(271, 22);
+			this->textBox2->Size = System::Drawing::Size(204, 20);
 			this->textBox2->TabIndex = 6;
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(725, 174);
-			this->textBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox3->Location = System::Drawing::Point(544, 141);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(271, 22);
+			this->textBox3->Size = System::Drawing::Size(204, 20);
 			this->textBox3->TabIndex = 7;
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(725, 243);
-			this->textBox4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox4->Location = System::Drawing::Point(544, 197);
 			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(271, 22);
+			this->textBox4->Size = System::Drawing::Size(204, 20);
 			this->textBox4->TabIndex = 8;
 			// 
 			// label1
@@ -196,10 +189,9 @@ namespace internet {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(721, 15);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(541, 12);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(98, 22);
+			this->label1->Size = System::Drawing::Size(78, 17);
 			this->label1->TabIndex = 9;
 			this->label1->Text = L"Название ";
 			// 
@@ -208,10 +200,9 @@ namespace internet {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label2->Location = System::Drawing::Point(721, 83);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(541, 67);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(113, 22);
+			this->label2->Size = System::Drawing::Size(90, 17);
 			this->label2->TabIndex = 10;
 			this->label2->Text = L"Количество";
 			// 
@@ -220,10 +211,9 @@ namespace internet {
 			this->label3->AutoSize = true;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label3->Location = System::Drawing::Point(721, 149);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Location = System::Drawing::Point(541, 121);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(54, 22);
+			this->label3->Size = System::Drawing::Size(44, 17);
 			this->label3->TabIndex = 11;
 			this->label3->Text = L"Цена";
 			// 
@@ -232,19 +222,33 @@ namespace internet {
 			this->label4->AutoSize = true;
 			this->label4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label4->Location = System::Drawing::Point(721, 218);
-			this->label4->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label4->Location = System::Drawing::Point(541, 177);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(52, 22);
+			this->label4->Size = System::Drawing::Size(43, 17);
 			this->label4->TabIndex = 12;
 			this->label4->Text = L"Итог";
 			// 
+			// button5
+			// 
+			this->button5->BackColor = System::Drawing::Color::Plum;
+			this->button5->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Times New Roman", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button5->Location = System::Drawing::Point(275, 317);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(156, 40);
+			this->button5->TabIndex = 13;
+			this->button5->Text = L"Выполнить";
+			this->button5->UseVisualStyleBackColor = false;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm2::button5_Click);
+			// 
 			// MyForm2
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::Aqua;
-			this->ClientSize = System::Drawing::Size(1023, 465);
+			this->ClientSize = System::Drawing::Size(767, 378);
+			this->Controls->Add(this->button5);
 			this->Controls->Add(this->label4);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label2);
@@ -259,7 +263,6 @@ namespace internet {
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->dataGridView1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"MyForm2";
 			this->Text = L"Заказы";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
@@ -307,12 +310,41 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	textBox4->Text = total.ToString();
 }
 private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
-	// Обработчик события для кнопки "Удалить"
-   // Получение выбранной строки
+	// Проверка наличия выбранной строки
+	if (dataGridView1->SelectedRows->Count == 0) {
+		MessageBox::Show("Ошибка: Сначала выберите запись для удаления.", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		return;
+	}
+
+	// Получение выбранной строки
 	int selectedRowIndex = dataGridView1->CurrentCell->RowIndex;
 
-	// Удаление записи
-	RemoveRecord(selectedRowIndex);
+	// Подтверждение удаления
+	System::Windows::Forms::DialogResult result = MessageBox::Show("Вы уверены, что хотите удалить запись?", "Подтверждение удаления", MessageBoxButtons::YesNo, MessageBoxIcon::Question);
+
+	// Проверка результата подтверждения
+	if (result == System::Windows::Forms::DialogResult::Yes) {
+		// Удаление записи
+		RemoveRecord(selectedRowIndex);
+	}
+	// Иначе, если пользователь выбрал "Нет" или "Отмена", ничего не делаем
+}
+
+private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+	// Подтверждение выполнения заказа
+	System::Windows::Forms::DialogResult result = MessageBox::Show("Вы уверены, что хотите выполнить заказ?", "Подтверждение выполнения заказа", MessageBoxButtons::YesNo, MessageBoxIcon::Question);
+
+	// Проверка результата подтверждения
+	if (result == System::Windows::Forms::DialogResult::Yes) {
+		// Сохранение изменений в базе данных
+		UpdateDatabase();
+
+		// Вывод сообщений о выполненном заказе
+		MessageBox::Show("Заказ выполнен.", "Успех", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		MessageBox::Show("Спишите товары со склада.", "Успех", MessageBoxButtons::OK, MessageBoxIcon::Information);
+		MessageBox::Show("Удалите данные из таблицы.", "Успех", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
+	// Иначе, если пользователь выбрал "No" или "Cancel", ничего не делаем
 }
 };
 }
