@@ -90,10 +90,9 @@ namespace internet {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button1->ForeColor = System::Drawing::Color::Black;
-			this->button1->Location = System::Drawing::Point(713, 218);
-			this->button1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button1->Location = System::Drawing::Point(535, 177);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(292, 43);
+			this->button1->Size = System::Drawing::Size(219, 35);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Обновить ";
 			this->button1->UseVisualStyleBackColor = false;
@@ -106,10 +105,9 @@ namespace internet {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button2->ForeColor = System::Drawing::Color::Black;
-			this->button2->Location = System::Drawing::Point(713, 288);
-			this->button2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button2->Location = System::Drawing::Point(535, 234);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(292, 43);
+			this->button2->Size = System::Drawing::Size(219, 35);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Добавить";
 			this->button2->UseVisualStyleBackColor = false;
@@ -122,10 +120,9 @@ namespace internet {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button3->ForeColor = System::Drawing::Color::Black;
-			this->button3->Location = System::Drawing::Point(713, 354);
-			this->button3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button3->Location = System::Drawing::Point(535, 288);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(292, 43);
+			this->button3->Size = System::Drawing::Size(219, 35);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"Удалить";
 			this->button3->UseVisualStyleBackColor = false;
@@ -133,26 +130,26 @@ namespace internet {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(713, 47);
-			this->textBox1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox1->BackColor = System::Drawing::SystemColors::Menu;
+			this->textBox1->Location = System::Drawing::Point(535, 38);
 			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(292, 22);
+			this->textBox1->Size = System::Drawing::Size(220, 20);
 			this->textBox1->TabIndex = 3;
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(713, 100);
-			this->textBox2->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox2->BackColor = System::Drawing::SystemColors::Menu;
+			this->textBox2->Location = System::Drawing::Point(535, 81);
 			this->textBox2->Name = L"textBox2";
-			this->textBox2->Size = System::Drawing::Size(292, 22);
+			this->textBox2->Size = System::Drawing::Size(220, 20);
 			this->textBox2->TabIndex = 4;
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(713, 156);
-			this->textBox3->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->textBox3->BackColor = System::Drawing::SystemColors::Menu;
+			this->textBox3->Location = System::Drawing::Point(535, 127);
 			this->textBox3->Name = L"textBox3";
-			this->textBox3->Size = System::Drawing::Size(292, 22);
+			this->textBox3->Size = System::Drawing::Size(220, 20);
 			this->textBox3->TabIndex = 5;
 			// 
 			// label1
@@ -161,10 +158,9 @@ namespace internet {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label1->ForeColor = System::Drawing::Color::Black;
-			this->label1->Location = System::Drawing::Point(708, 20);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(531, 16);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(103, 23);
+			this->label1->Size = System::Drawing::Size(82, 19);
 			this->label1->TabIndex = 6;
 			this->label1->Text = L"Название ";
 			// 
@@ -174,10 +170,9 @@ namespace internet {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ForeColor = System::Drawing::Color::Black;
-			this->label2->Location = System::Drawing::Point(708, 76);
-			this->label2->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label2->Location = System::Drawing::Point(531, 62);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(117, 23);
+			this->label2->Size = System::Drawing::Size(95, 19);
 			this->label2->TabIndex = 7;
 			this->label2->Text = L"Количество";
 			// 
@@ -187,23 +182,21 @@ namespace internet {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label3->ForeColor = System::Drawing::Color::Black;
-			this->label3->Location = System::Drawing::Point(708, 129);
-			this->label3->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label3->Location = System::Drawing::Point(531, 105);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(57, 23);
+			this->label3->Size = System::Drawing::Size(46, 19);
 			this->label3->TabIndex = 8;
 			this->label3->Text = L"Цена";
 			// 
 			// dataGridView1
 			// 
-			this->dataGridView1->BackgroundColor = System::Drawing::Color::Aqua;
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->GridColor = System::Drawing::Color::Gray;
-			this->dataGridView1->Location = System::Drawing::Point(16, 31);
-			this->dataGridView1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->dataGridView1->Location = System::Drawing::Point(12, 25);
 			this->dataGridView1->Name = L"dataGridView1";
 			this->dataGridView1->RowHeadersWidth = 51;
-			this->dataGridView1->Size = System::Drawing::Size(593, 441);
+			this->dataGridView1->Size = System::Drawing::Size(445, 358);
 			this->dataGridView1->TabIndex = 9;
 			// 
 			// button4
@@ -213,10 +206,9 @@ namespace internet {
 			this->button4->Font = (gcnew System::Drawing::Font(L"Times New Roman", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button4->ForeColor = System::Drawing::Color::Black;
-			this->button4->Location = System::Drawing::Point(713, 420);
-			this->button4->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
+			this->button4->Location = System::Drawing::Point(535, 341);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(292, 43);
+			this->button4->Size = System::Drawing::Size(219, 35);
 			this->button4->TabIndex = 10;
 			this->button4->Text = L"Сохранить ";
 			this->button4->UseVisualStyleBackColor = false;
@@ -224,10 +216,10 @@ namespace internet {
 			// 
 			// MyForm1
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::Aqua;
-			this->ClientSize = System::Drawing::Size(1065, 528);
+			this->BackColor = System::Drawing::SystemColors::Info;
+			this->ClientSize = System::Drawing::Size(799, 429);
 			this->Controls->Add(this->button4);
 			this->Controls->Add(this->dataGridView1);
 			this->Controls->Add(this->label3);
@@ -240,7 +232,6 @@ namespace internet {
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
-			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"MyForm1";
 			this->Text = L"Склад";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();

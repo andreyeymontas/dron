@@ -42,7 +42,7 @@ namespace internet {
 
     void MyForm2::AddRecord(String^ name, int quantity, double price, double total)
     {
-        // Проверка наличия товара на складе
+        // Проверка наличия нужного количества товара на складе
         if (IsProductAvailable(name, quantity))
         {
             if (dataTable)
@@ -55,25 +55,54 @@ namespace internet {
                 dataTable->Rows->Add(newRow);
                 UpdateDatabase();
             }
+            // Проверка, есть ли уже заказанные товары
+            if (dataGridView1->Rows->Count > 0)
+            {
+                // Проверка, есть ли уже этот товар в заказе
+                for (int i = 0; i < dataGridView1->Rows->Count; i++)
+                {
+                    if (dataGridView1->Rows[i]->Cells["Название"]->Value != nullptr &&
+                        dataGridView1->Rows[i]->Cells["Название"]->Value->ToString() == name)
+                    {
+                        int existingQuantity = Convert::ToInt32(dataGridView1->Rows[i]->Cells["Количество"]->Value);
+                        int totalQuantity = existingQuantity + quantity;
+
+                        // Проверка, не превышает ли общее количество товара на складе
+                        if (IsProductAvailable(name, totalQuantity))
+                        {
+                            // Обновление количества в существующей записи
+                            dataGridView1->Rows[i]->Cells["Количество"]->Value = totalQuantity;
+                            UpdateDatabase();
+                            dataGridView1->Refresh(); // Обновление dataGridView1
+                            return;
+                        }
+                        else
+                        {
+                            MessageBox::Show("Недостаточно товара на складе.", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+                            return;
+                        }
+                    }
+                }
+            }
+
+            
             else
             {
-                MessageBox::Show("Ошибка: Таблица не инициализирована.", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+                MessageBox::Show("Товара нет на складе или недостаточно товара на складе.", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
             }
         }
         else
         {
-            MessageBox::Show("Товара нет на складе.", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+            MessageBox::Show("Товара нет на складе или недостаточно товара на складе.", "Ошибка", MessageBoxButtons::OK, MessageBoxIcon::Error);
         }
     }
 
     // Метод для проверки наличия товара на складе
-    bool MyForm2::IsProductAvailable(String^ productName, int quantity)
+    bool MyForm2::IsProductAvailable(String^ productName, int requestedQuantity)
     {
-       
-
         int quantityInStock = GetProductQuantityInStock(productName);
 
-        return quantityInStock >= quantity;
+        return quantityInStock >= requestedQuantity;
     }
 
     // Получения количества товара на складе 

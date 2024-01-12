@@ -75,10 +75,9 @@ namespace internet {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button1->ForeColor = System::Drawing::Color::Black;
-			this->button1->Location = System::Drawing::Point(171, 191);
-			this->button1->Margin = System::Windows::Forms::Padding(4);
+			this->button1->Location = System::Drawing::Point(128, 155);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(328, 87);
+			this->button1->Size = System::Drawing::Size(246, 71);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"Склад";
 			this->button1->UseVisualStyleBackColor = false;
@@ -91,10 +90,9 @@ namespace internet {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Times New Roman", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button2->ForeColor = System::Drawing::Color::Black;
-			this->button2->Location = System::Drawing::Point(171, 331);
-			this->button2->Margin = System::Windows::Forms::Padding(4);
+			this->button2->Location = System::Drawing::Point(128, 269);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(328, 82);
+			this->button2->Size = System::Drawing::Size(246, 67);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"Заказы ";
 			this->button2->UseVisualStyleBackColor = false;
@@ -105,21 +103,19 @@ namespace internet {
 			this->label1->AutoSize = true;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Times New Roman", 24.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(0, 11);
-			this->label1->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->label1->Location = System::Drawing::Point(0, 9);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(520, 48);
+			this->label1->Size = System::Drawing::Size(418, 37);
 			this->label1->TabIndex = 2;
-			this->label1->Text = L"             Интеренет магзин ";
+			this->label1->Text = L"             Интеренет магазин ";
 			// 
 			// panel1
 			// 
 			this->panel1->BackgroundImage = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"panel1.BackgroundImage")));
 			this->panel1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Stretch;
-			this->panel1->Location = System::Drawing::Point(171, 74);
-			this->panel1->Margin = System::Windows::Forms::Padding(4);
+			this->panel1->Location = System::Drawing::Point(128, 60);
 			this->panel1->Name = L"panel1";
-			this->panel1->Size = System::Drawing::Size(328, 110);
+			this->panel1->Size = System::Drawing::Size(246, 89);
 			this->panel1->TabIndex = 3;
 			// 
 			// button3
@@ -129,10 +125,9 @@ namespace internet {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Times New Roman", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button3->ForeColor = System::Drawing::Color::Black;
-			this->button3->Location = System::Drawing::Point(171, 469);
-			this->button3->Margin = System::Windows::Forms::Padding(4);
+			this->button3->Location = System::Drawing::Point(128, 381);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(328, 123);
+			this->button3->Size = System::Drawing::Size(246, 100);
 			this->button3->TabIndex = 4;
 			this->button3->Text = L"Резервное копирование";
 			this->button3->UseVisualStyleBackColor = false;
@@ -140,17 +135,16 @@ namespace internet {
 			// 
 			// Form
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
+			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::Aqua;
-			this->ClientSize = System::Drawing::Size(636, 614);
+			this->BackColor = System::Drawing::SystemColors::Info;
+			this->ClientSize = System::Drawing::Size(477, 499);
 			this->Controls->Add(this->button3);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedToolWindow;
-			this->Margin = System::Windows::Forms::Padding(4);
 			this->Name = L"Form";
 			this->Text = L"Интернет магазин";
 			this->ResumeLayout(false);

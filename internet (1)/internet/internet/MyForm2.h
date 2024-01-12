@@ -93,7 +93,7 @@ namespace internet {
 			// 
 			// dataGridView1
 			// 
-			this->dataGridView1->BackgroundColor = System::Drawing::Color::Aqua;
+			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(12, 12);
 			this->dataGridView1->Name = L"dataGridView1";
@@ -158,6 +158,7 @@ namespace internet {
 			// 
 			// textBox1
 			// 
+			this->textBox1->BackColor = System::Drawing::SystemColors::Menu;
 			this->textBox1->Location = System::Drawing::Point(544, 32);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(204, 20);
@@ -165,6 +166,7 @@ namespace internet {
 			// 
 			// textBox2
 			// 
+			this->textBox2->BackColor = System::Drawing::SystemColors::Menu;
 			this->textBox2->Location = System::Drawing::Point(544, 88);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(204, 20);
@@ -172,6 +174,7 @@ namespace internet {
 			// 
 			// textBox3
 			// 
+			this->textBox3->BackColor = System::Drawing::SystemColors::Menu;
 			this->textBox3->Location = System::Drawing::Point(544, 141);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(204, 20);
@@ -179,6 +182,7 @@ namespace internet {
 			// 
 			// textBox4
 			// 
+			this->textBox4->BackColor = System::Drawing::SystemColors::Menu;
 			this->textBox4->Location = System::Drawing::Point(544, 197);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(204, 20);
@@ -246,7 +250,7 @@ namespace internet {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::Color::Aqua;
+			this->BackColor = System::Drawing::SystemColors::Info;
 			this->ClientSize = System::Drawing::Size(767, 378);
 			this->Controls->Add(this->button5);
 			this->Controls->Add(this->label4);
